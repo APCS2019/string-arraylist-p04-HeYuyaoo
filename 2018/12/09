@@ -1,0 +1,21 @@
+public String decodeString(ArrayList<StringPart> parts){
+    String temp="";
+    for(int i=0;i<parts.size();i++){
+    temp+=parts.get(i);
+    }
+    return temp;
+}
+public ArrayList<StringPart> encodeString(String word){
+    ArrayList<StringPart> temp=new ArrayList<StringPart>();
+    StringPart a=findPart(word);
+    while(a.getStart()!=-1){
+    int index=a.getStart()+a.getLength();
+    masterString=masterString(index);
+    temp.add(a);
+    a=findPart(word);
+    }
+    
+ }
+       
+    
+    
